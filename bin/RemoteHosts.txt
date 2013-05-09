@@ -1,0 +1,5 @@
+beet.cs.colostate.edu 4500
+carrot.cs.colostate.edu 4500
+corn.cs.colostate.edu 4500
+kale.cs.colostate.edu 4500
+onion.cs.colostate.edu 4500

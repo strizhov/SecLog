@@ -1,0 +1,53 @@
+
+DESCRIPTION
+
+SecLog - software implementation for the "Secure Logging as a Service—Delegating Log Management to the Cloud" paper.
+http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6407695&isnumber=6504497
+
+ABSTRACT
+
+Securely maintaining log records over extended periods of 
+time is very important to the proper functioning of any organization. 
+Integrity of the log files and that of the logging process 
+need to be ensured at all times. 
+In addition, as log files often contain sensitive information, 
+confidentiality and privacy of log records are equally important. 
+However, deploying a secure logging infrastructure involves 
+substantial capital expenses that many organizations may find overwhelming. 
+Delegating log management to the cloud appears to be a viable cost saving measure. 
+In this paper, we identify the challenges for a secure 
+cloud-based log management service and propose a framework for doing the same.
+
+
+COMPILATION
+
+$ ant
+
+CLEANING
+
+$ ant clean
+
+RUNNING
+
+KeySaver:
+
+$ cd classes
+$ java seclog.keysaver.Main 4500
+	
+This command starts KeySaver application on 4500 TCP port.	
+
+LogClient:
+
+$ cd classes
+$ java seclog.logclient.Main 5000
+
+This command start LogClient application on 5000 TCP port.
+LogClient reads the configuration "RemoteHosts.txt" file 
+from "config" directory with list of KeySaver hosts.
+
+AUTHORS:
+
+Mikhail Strizhov - strizhov@CS.ColoState.EDU
+Kirill Belyaev - kirill@CS.ColoState.EDU
+Dieudonne Mulamba - mulamba@CS.ColoState.EDU
+
